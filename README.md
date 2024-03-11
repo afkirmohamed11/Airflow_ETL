@@ -15,4 +15,4 @@ This Airflow ETL pipeline is designed  to efficiently extract data from a MySQL 
 3- Finally, run the DAG (Directed Acyclic Graph) script to automate the ETL job using Airflow. This DAG script will contain the tasks for extracting data from the MySQL staging database, transforming it if necessary, and loading it into the PostgreSQL Data Warehouse. The DAG will be scheduled to run at the desired intervals every 2 minutes.
 
 ## You will need to:
-##### create a log directory in the project folder for the dag logs
+#### create a log directory in the project folder for the dag logs
