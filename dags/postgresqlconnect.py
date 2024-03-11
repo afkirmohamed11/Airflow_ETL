@@ -6,7 +6,7 @@ from datetime import datetime
 
 dsn_hostname = '127.0.0.1'
 dsn_user='postgres'       
-dsn_pwd ='afkir'      
+dsn_pwd ='your_password'      
 dsn_port ="5432"                
 dsn_database ="postgres"           
 
@@ -25,9 +25,10 @@ conn = psycopg2.connect(
 
 cursor = conn.cursor()
 
-# create table
-# create table
-SQL = """CREATE TABLE IF NOT EXISTS sales_data (
+# create DW nad table
+SQL1 = """CREATE schema ProductionDW;
+"""
+SQL2 = """CREATE TABLE IF NOT EXISTS ProductionDW.sales_data (
   rowid SERIAL PRIMARY KEY,
   product_id INT NOT NULL,
   customer_id INT NOT NULL,
@@ -37,8 +38,10 @@ SQL = """CREATE TABLE IF NOT EXISTS sales_data (
 """
 
 
-# Execute the SQL statement
-cursor.execute(SQL)
+# Execute the SQL's statement
+cursor.execute(SQL1)
+
+cursor.execute(SQL2)
 
 print("Table created")
 # Insert data into the sales_data table
