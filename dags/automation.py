@@ -6,12 +6,12 @@ import logging
 
 MYSQL_HOST = "127.0.0.1"
 MYSQL_USER = "root"
-MYSQL_PASSWORD = "afkir"
+MYSQL_PASSWORD = "your_password"
 MYSQL_DATABASE = "sales"
 
 POSTGRES_HOST = "127.0.0.1"
 POSTGRES_USER = "postgres"
-POSTGRES_PASSWORD = "afkir"
+POSTGRES_PASSWORD = "your_password"
 POSTGRES_DATABASE = "postgres"
 POSTGRES_PORT = "5432"
 
