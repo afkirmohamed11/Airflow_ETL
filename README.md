@@ -1,3 +1,4 @@
 # Ariflow_ETL
 
-This is an Airflow ETL pipeline designed to extract data from a staging area in a MySQL database and load it into a production PostgreSQL data warehouse. The pipeline is set to run at intervals of 2 minutes to check for any new rows added in the MySQL staging database and then append them to the existing data in the PostgreSQL data warehouse.
+
+This Airflow ETL pipeline is designed  to efficiently extract data from a MySQL staging area and seamlessly load it into a production PostgreSQL data warehouse. Configured to run every 2 minutes, the pipeline diligently monitors the MySQL staging database for any fresh rows. Upon detection, it performs a slight transformation before appending the data to the PostgreSQL data warehouse. Specifically, a timestamp column is incorporated for each row destined for the final data warehouse, enhancing data traceability and temporal context within the warehouse.
