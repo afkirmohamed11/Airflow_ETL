@@ -51,6 +51,12 @@ This Airflow ETL pipeline is designed  to efficiently extract data from a MySQL 
 > copy .env.example .env
 ```
 
+### Run the pipeline
+locate in docker folder in your terminal and run the following command:
+```bash
+> docker-compose up
+```
+
 ## Connect and Collaborate
 
 Feel free to connect and collaborate on [LinkedIn](https://www.linkedin.com/in/mohamed-afkir-1bbb9729a)<br>
